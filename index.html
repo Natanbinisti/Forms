@@ -1,42 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>canard</title>
-    <link rel="stylesheet" href="style.css">
-
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
-<fieldset>
-<p>Pseudo* <input type="text" name="pseudo" id=""></p>
-<p>Mot de passe <input type="text"></p>
-<p>Prenom <input type="text" value="Votre prenom"></p>
-<p>Email <input type="text"></p>
-<p>Avatar <input type="submit" value="Browse...">No file selected.</p>
-    <label for="pays">pays:</label>
+<form>
+    <label for="pseudo">Pseudo*</label>
+    <input type="text" id="pseudo">
 
-    <select id="pays">
-        <option value="Espagne">Espagne</option>
-        <option value="France">France</option>
-        <option value="Russie">Russie</option>
-        <option value="Inde">Inde</option>
-    </select>
+    <br>
 
-    <p>Quel sont vos fruits préférés ?</p>
-    <p>Civilite</p>
-    <p>Ville <input type="text"></p>
-    <p>Code postal<input type="text"></p>
-    <p>Adresse <input type="text"></p>
-    <p>Date de Naissance<input type="date" id="Anniversaire" name="birthday"><br><br></p>
-    <p>Telephone <input type="text"></p>
-    <p>Recherche <input type="text"></p>
-    <p>Couleur  <input type="submit"></p>
-    <p>Avatar <input type="submit" value="Browse...">No file selected.</p>
-    <p>Nom<input type="text" value="test" ></p>
-    <p><input type="submit " value="s'inscrire"></p>
-    <p><input type="submit " value="s'inscrire Autre bouton"></p>
+    <label for="password">Mot de passe</label>
+    <input type="password" id="password">
+
+    <br>
+
+    <label for="prenom">Votre prénom :</label>
+    <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
+
+    <br>
+
+    <label for="email">entrez votre e-mail</label>
+    <input type="email" id="email">
 
 
-</fieldset>
+    <br>
+
+    <label id="choixFruit"for="choixFruit">Choisis un fruit :</label>
+
+    <br>
+
+    <label for="Orange">Orange</label>
+    <input type="checkbox" name="Orange" id="Orange">
+
+    <label for="Fraise">Fraise</label>
+    <input type="checkbox" name="Fraise" id="Fraise">
+
+    <label for="Pêche">Pêche</label>
+    <input type="checkbox" name="Pêche" id="Pêche">
+
+    <br>
+
+    <label id="choixGenre"for="choixGenre">Civilite :</label>
+    <br>
+    <label for="homme">Homme</label>
+    <input type="radio"  id="homme">
+
+    <label for="femme">Femme</label>
+    <input type="radio" id="femme">
+
+    <br>
+
+    <label for="ville">Ville :</label>
+    <input type="text" id="ville" name="ville">
+    <br>
+    <label for="codePostal">Code Postal :</label>
+    <input type="text" id="codePostal" name="codePostal">
+
+    <br>
+    <label for="adress">Adresse :</label>
+    <input type="adress" id="adress">
+    <br>
+
+    <label for="avatar">Avatar :</label>
+    <input type="file" id="avatar">
+
+    <br>
+
+    <label for="phone">Tel :</label>
+    <input type="tel" id="phone">
+
+    <br>
+
+    <label for="color">Couleur</label>
+    <input type="color" id="color">
+
+    <br>
+
+    <label for="jauge">Jauge</label>
+    <input type="range" id="jauge">
+
+    <br>
+
+    <label for="naissance">Naissance</label>
+    <input type="date" id="naissance">
+    <br>
+    <input type="button" value="s'inscrire"> <br>
+    <input type="button" value="s'inscrire autre bouton">
+
+    <br>
+
+
+
+    <label for="name" id="name">Nom :</label>
+    <input type="text" placeholder="test">
+
+    <br>
+    <input type="text">
+    <input type="submit" placeholder="envoyer" >
+
+</form>
+
 </body>
 </html>
